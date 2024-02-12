@@ -11,6 +11,7 @@ def clean(input1, input2, output):
 
     merged_df = merged_df[~merged_df['job'].str.contains('insurance|Insurance')]
 
+    print('Output file shape:', merged_df.shape)
     return merged_df
 
 
